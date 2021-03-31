@@ -1,0 +1,6 @@
+/* box-sizing: border box; allows the box to be the actual height & width that's set */
+/* by default content-box is set & height & width pertain to the content*/
+
+* {
+    box-sizing: border-box;
+}

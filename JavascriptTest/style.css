@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.row {
+    display: flex;   
+    flex-wrap: wrap;
+}
+
+.row .col-1-of-4 {
+    width: 25%;
+    height: 50rem;
+    background-color: blue;
+    border: 1px solid #3f3f3f;
+}
+
+.row .col-1-of-3 {
+    width: 33.33%;
+    height: 50rem;
+    background-color: blue;
+    border: 1px solid #3f3f3f;
+}

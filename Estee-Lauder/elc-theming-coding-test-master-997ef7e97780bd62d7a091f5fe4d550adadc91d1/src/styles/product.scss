@@ -1,0 +1,225 @@
+
+@import 'fonts.scss';
+@import 'vars.scss';
+
+.product {
+    &-description {
+        &__name {
+            font-family: $elc-font-standard;
+            font-size: 20px;
+            line-height: 24px;
+            color: #1A1A1A;
+            margin-bottom: 7px;
+        }
+
+        &__subtitle {
+            font-family: $elc-font-standard;
+            letter-spacing: 0.02em;
+            margin-bottom: 15px;
+        }
+    }
+
+    &-rating {
+        margin-bottom: 19px;
+        & img { 
+            display: inline-block;
+        }
+        &__stars {
+            max-width: 115px;  
+        } 
+
+        &__arrow {
+            width: 17px;
+        }
+    }
+
+    &-details {
+        margin-bottom: 33px;
+
+         & div {
+             margin: 12px 0;
+         }
+    }
+
+    &-color-selector {
+        background: #FFFFFF;
+        border: 2px solid #E6E6E6;
+        box-sizing: border-box;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-weight: 700;
+
+        &__color {
+            height: 20px;
+            width: 20px;
+            float: right;
+        }
+    }
+
+    &-purchase {
+        width: 100%;
+        font-weight: 700;
+    
+        &__quantity {
+            display: inline-block;
+            width: 50%;
+
+            & img {
+                vertical-align: bottom;
+                margin: 0 9px;
+            }
+        }
+
+        &__container {
+            margin-bottom: 33px;
+        }
+
+        &__otp {
+            display: inline-block;
+            width: 50%;
+
+            & img { 
+                display: inline-block;
+            }
+
+            &_arrow {
+                width: 20px;    
+                vertical-align: bottom;
+            }
+        }
+
+        &__price {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+            letter-spacing: -0.01em;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            background: #000000;
+            color: white;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 20px;
+        }
+    }
+
+    &-image {
+        width: 100%;
+        padding: 4.274% 0;    
+        margin-bottom: 70px;
+    }
+     
+    &-hr {
+        background: #E6E6E6;
+        border: 1px solid #e6e6e6;
+        margin-bottom: 20px;
+    }
+
+    &-category {
+        display: none;
+    }
+
+    &-category-m {
+        display: block;
+        padding-top: 93px;
+
+        &__text {
+            font-family: $elc-font-light;
+            color: #999999;
+            font-weight: 200;
+            letter-spacing: 0.03em;
+            margin-bottom: 31px;
+        }
+    }
+
+    
+    @media only screen and (min-width: $breakpoint-tablet) {
+        & {
+            padding-top: 184px;
+        }
+
+        &-imgContainer {
+            display: inline-block;
+            width: 50%;
+        }
+
+        &-descrContainer {
+            display: inline-block;
+            width: 50%;
+        }
+
+        &-category {
+            display: block;
+            font-size: 17px;
+            font-family: $elc-font-light;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.02em;
+            color: #999999;
+            margin-bottom: 11px;
+        }
+
+        &-description {
+            &__name {
+                font-size: 28px;
+                line-height: 32px;
+                letter-spacing: -0.02em;
+                margin-bottom: 8px;
+            }
+
+            &__subtitle {
+                font-size: 17px;
+                line-height: 24px;
+            }
+        }
+
+        &-details {
+            margin-bottom: 0;
+            & * {
+                font-size: 17px;
+                line-height: 24px;
+                letter-spacing: -0.01em;
+            }
+            & div {
+                margin: 0;
+                margin-bottom: 16px;
+            }
+            &__row-2 {
+                display: block;
+                width: 100%;
+                & div {
+                    vertical-align: top;
+                    display: inline-block;
+                    width: 50%;
+                }
+            }
+        }
+
+        &-color-selector {
+            max-width: 276px;
+        }
+
+        &-purchase{
+            &__price {
+                display: inline-block;
+                width: 50%;
+            }
+            &__button {
+                display: inline-block;
+                width: 50%;
+            }
+        }
+
+        &-image {
+            height: 720px;
+        }
+
+        &-category-m {
+            display: none;
+        }
+    }
+
+}
+/** Add styles here **/
